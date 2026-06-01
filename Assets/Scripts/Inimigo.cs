@@ -6,6 +6,8 @@ public class Inimigo : MonoBehaviour
 {
     public int vida = 1;
     public float alturaDescida = 1;
+    [Min(1)] public float velocidade = 1;
+    public int pontos = 10;
 
 
     public void AplicarDano(int dano)

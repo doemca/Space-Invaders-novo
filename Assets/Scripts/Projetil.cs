@@ -6,6 +6,7 @@ public class Projetil : MonoBehaviour
 {
     public float velocidade = 15;
     private float tempoDeCriacao;
+    public int pontos = 10;
     void Start()
     {
         tempoDeCriacao = Time.time;
@@ -25,6 +26,7 @@ public class Projetil : MonoBehaviour
     {
         if(Time.time > tempoDeCriacao + 5)
         {
+            GerenciadorJogo.instance.Acrescentar(pontos);
             Destroy(gameObject);
         }
     }
