@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GerenciadorJogo : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class GerenciadorJogo : MonoBehaviour
 
     public void Start()
     {
+        Time.timeScale = 1;
         instance = this;
         TelaFimdeJogo.SetActive(false);
     }
@@ -40,6 +42,6 @@ public class GerenciadorJogo : MonoBehaviour
 
     public void CarregarCena(string cena)
     {
-        ScreenManager.LoadSceneAsync(cena);
+        SceneManager.LoadSceneAsync(cena);
     }
 }

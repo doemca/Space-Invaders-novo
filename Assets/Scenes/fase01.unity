@@ -869,7 +869,7 @@ MonoBehaviour:
   inimigosADerrotar: 5
   pontuacao: 0
   textoPontos: {fileID: 2137848387}
-  TelaFimdeJogo: {fileID: 0}
+  TelaFimdeJogo: {fileID: 295599077}
 --- !u!4 &1834138382
 Transform:
   m_ObjectHideFlags: 0
@@ -967,7 +967,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1838436053}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1834138381}
+        m_TargetAssemblyTypeName: GerenciadorJogo, Assembly-CSharp
+        m_MethodName: CarregarCena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: fase02
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1838436053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1149,9 +1161,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2272752369413621467, guid: 540e26b64228f8f42ab13a8e55156fa6, type: 3}
+      propertyPath: m_Size.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2272752369413621467, guid: 540e26b64228f8f42ab13a8e55156fa6, type: 3}
+      propertyPath: m_Size.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2272752369413621467, guid: 540e26b64228f8f42ab13a8e55156fa6, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: cb919784ad3050f40b070c8bae8d7b4d, type: 3}
+    - target: {fileID: 2272752369413621467, guid: 540e26b64228f8f42ab13a8e55156fa6, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4415132699608105661, guid: 540e26b64228f8f42ab13a8e55156fa6, type: 3}
       propertyPath: m_Name
       value: Nave
