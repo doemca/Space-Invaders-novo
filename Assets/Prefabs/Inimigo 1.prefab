@@ -100,6 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 1
   alturaDescida: 1
+  velocidade: 1
+  pontos: 10
 --- !u!58 &4448902451661428809
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134,4 +136,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.03593052
+  m_Radius: 45.66

@@ -17,6 +17,10 @@ public class GerenciadorJogo : MonoBehaviour
         Time.timeScale = 1;
         instance = this;
         TelaFimdeJogo.SetActive(false);
+        if (PlayerPrefs.HasKey("pontos"))
+        {
+            pontuacao = PlayerPrefs.GetInt("pontos");
+        }
     }
 
     public void Acrescentar(int pontos)
@@ -31,6 +35,7 @@ public class GerenciadorJogo : MonoBehaviour
 
     public void FimdoJogo()
     {
+        PlayerPrefs.SetInt("pontos", pontuacao);
         TelaFimdeJogo.SetActive(true);
         Time.timeScale = 0;
     }
